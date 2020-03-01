@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" /> 
+	<title>CONTACT ME</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/animal-icon.png" />
+	<style>
+  
+    ul {
+      list-style-type: none;
+      
+      justify-content: center;
+      overflow: hidden;
+      background-color: #333;
+      width:47%;
+      margin: auto;
+    }
+
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+     background-color: #111;
+    }
+
+    .active {
+      background-color: #4CAF50;
+      font-size:1.4em;
+      }
+      .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #4CAF50;
+   color: white;
+   text-align: center;
+}
+  </style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">HOMEPAGE</a></li>
+  <li><a href="blog.html">BLOG</a></li>
+  <li><a href="services.html">OUR SERVICES</a></li>
+  <li><a href="team.html">OUR TEAM</a></li>
+  <li><a href="gallery.html">GALLERY</a></li>
+  <li><a class="active" style='font-size:1.4em' href="contactme.html">CONTACT ME</a></li>
+  <li><a href="registration.html">REGISTER</a></li>
+  
+
+</ul>
+<div style="position: absolute;left: 1500px; top: 100px">
+<form action="response.html">
+  <label for="Search"> </label>
+  <input type="text" placeholder="Search.." id="fname" name="fname" size="30">
+
+  <input type="submit" value="Search">
+  </div>
+  <br><br><br><br>
+  <form action=”response.html” target=”_top”>
+
+  <div align="center" >
+        
+         <br>
+         
+        <b>Name &amp; Surname</b> <br>
+        <input type="text" id="namesurname" name=""> <br><br>
+        
+        <b>E-mail</b> <br>
+        <input type="text" id="email" name=""> <br><br>
+        
+        <b>Telephone</b> <br>
+        <input type="text" id="number" name="" maxlength="11" placeholder="11 numbers at max"> <br><br>
+        
+        <b>Issue</b> <br>
+        <input type="text" id="issue" name=""> <br><br>
+        
+        <b>Message</b> <br>
+        <textarea id="message" rows="10" cols="40"></textarea> <br>
+        
+        <input type="submit" value="Send" >
+<br><br>
+        <h5>Or if you want to contact me please click</h5>
+        <a href=mailto:bedirhangokce@eskisehir.edu.tr subject="subject text">
+                       bedirhangokce@eskisehir.edu.tr
+        </a>
+      
+      </div>
+</form>
+
+   </div>
+<div class="footer">
+  <a href="index.html"><img width="50" height="50" src="img/home.png">   </a>
+  <a href="https://www.facebook.com"><img width="50" height="50" src="img/facebook.png">   </a>
+  <a href="https://www.twitter.com"><img width="50" height="50" src="img/twitter.png">   </a>
+  <a href="https://www.instagram.com"><img width="50" height="50" src="img/instagram.png">   </a>
+  
+
+</div>
+       
+</body>
+</html>
