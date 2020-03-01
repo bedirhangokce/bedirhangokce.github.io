@@ -64,16 +64,26 @@
   <li><a href="registration.html">REGISTER</a></li>
   
 
+
+<form action="https://google.com/search" method="get">
+
+
+
+
+
 </ul>
 <div style="position: absolute;left: 1500px; top: 100px">
-<form action="response.html">
+<form action="https://google.com/search" method="get">
   <label for="Search"> </label>
-  <input type="text" placeholder="Search.." id="fname" name="fname" size="30">
+  <input type="text" name="q" placeholder="Search.." id="fname" name="fname" size="30">
 
   <input type="submit" value="Search">
+</form>
+<form action="response.html">
   </div>
   <br><br><br><br>
-  <form action=”response.html” target=”_top”>
+
+  <form action=”response.html”>
 
   <div align="center" >
         
@@ -94,7 +104,7 @@
         <b>Message</b> <br>
         <textarea id="message" rows="10" cols="40"></textarea> <br>
         
-        <input type="submit" value="Send" >
+        <input type="submit" value="Send" onClick="alert('Thanks for message!')"  >
 <br><br>
         <h5>Or if you want to contact me please click</h5>
         <a href=mailto:bedirhangokce@eskisehir.edu.tr subject="subject text">
