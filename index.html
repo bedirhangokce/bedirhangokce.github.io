@@ -1,124 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <meta charset = "utf-8" /> 
-  <title>HOMEPAGE</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/animal-icon.png" />
-  <style>
-    body{
-      background-color: #F8F9F4;
-      
-    }
-
-  
-    ul {
-      list-style-type: none;
-      
-      justify-content: center;
-      overflow: hidden;
-      background-color: #333;
-      width:62%;
-      margin: auto;
-
-    }
-
-    li {
-      float: left;
-      border-right:1px solid #bbb;
-    }
-
-    li:last-child {
-      border-right: none;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-      background-color: #111;
-    }
-
-    .active {
-      background-color: #4CAF50;
-      font-size:1.4em;
-      }
-
-    .column {
-      float: left;
-      width: 45.33%;
-      padding: 10px;
-      position: relative;
-      
-    }
-    .footer {
-      
-      min-width:750px;
-      max-width:750px;
-      text-align:center;
-      margin:0 auto;
-    }
-    .container {
-  &__image {
-    display: inline-block;
-    vertical-align: top;
-    width: 46%;
-  }
-  &__text {
-    display: inline-block;
-    width: 46%;
-    @media (max-width: 620px) {
-      width: 100%;
-    }
-  }
+<meta charset = "utf-8" /> 
+<title>HOMEPAGE</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/animal-icon.png" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
  
-}
-
-.footerr {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #4CAF50;
-   color: white;
-   text-align: center;
-}
-  
-  </style>
+<head>
+	<title></title>
 </head>
 <body>
 
+<nav class="navbar navbar-expand-sm bg-success navbar-dark ">
 
-<ul>
-  <li><a class="active" href="index.html">HOMEPAGE</a></li>
-  <li><a href="blog.html">BLOG</a></li>
-  <li><a href="services.html">OUR SERVICES</a></li>
-  <li><a href="team.html">OUR TEAM</a></li>
-  <li><a href="gallery.html">GALLERY</a></li>
-  <li><a href="contactme.html">CONTACT ME</a></li>
-  <li><a href="registration.html">REGISTER</a></li>
+    <a href="#" class="navbar-brand">
+      <img src="img/animal-icon.png" width="45" alt="" class="d-inline-block align-middle mr-2">
+    </a>
 
-</ul>
+    <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">HOMEPAGE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="blog.html">BLOG</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="services.html">OUR SERVICES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="team.html">OUR TEAM</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">GALLERY</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactme.html">CONTACT ME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="registration.html">REGISTER</a>
+    </li>
+    </ul>
 
-<img class="column" src="img/index-cat.jpg">
-<div style="position: absolute;left: 1170px; top: 100px">
-<form action="https://google.com/search" method="get">
-  <label for="Search"> </label>
-  <input type="text" name="q" placeholder="Search.." id="fname" name="fname" size="30">
+   <div class="navbar-collapse order-3 dual-collapse2">
 
-  <input type="submit" value="Search">
-</form>
+    <form class="form-inline my-2 my-lg-0 navbar-nav ml-auto" action="https://google.com/search" method="get">
+      <label for="Search"> </label>
+      <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search.." id="fname" name="fname" size="30">
+    </form>
+
   </div>
-  
-</form><br><br><br><br><br><br><br><br><br>
-<form action="registration.html">
-<div style="right: -50px;">
-<form action="registration.html" >
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-1 d-none d-md-block"></div>
+        <div class="col-xl-10 col-12">
+           <div class="row d-xl-block d-flex h-100">
+<div class="row">
+<img class="col-7" src="img/index-cat.jpg">
+
+<form class="col-sm-5" action="registration.html" >
   <label for="user">Username:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="password">Password:</label><br>
@@ -126,21 +72,28 @@
   <input type="submit" value="Login"><br> <br>
   
   <input type="submit" value="New user" >
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
 </form>
 </div>
-<p class="footer " align="center">General veterinary medicine , extensive diagnostics, surgery  , laparoscopy, orthopedics and many more disciplines can be found under our roof.  There is seldom a reason to refer you to a specialist. Our team of veterinarians and assistants have the use of an extensive laboratory and excellent x-ray, ultrasound  and surgery facilities. This enables us to give your pet high quality care.</p><br>
-<h1 class="footer" >Best care for your best friend</h1><br>
+</div>
+</div>
+</div>
+</div>
 
-<p class="footer" >If you want to contact me, please click <a href="contactme.html"> contact me</a> page.</p>
-<br><br><br><br>
-   </div>
-<div class="footerr">
-  <a href="index.html"><img width="40" height="40" src="img/home.png">   </a>
-  <a href="https://www.facebook.com"><img width="40" height="40" src="img/facebook.png">   </a>
-  <a href="https://www.twitter.com"><img width="40" height="40" src="img/twitter.png">   </a>
-  <a href="https://www.instagram.com"><img width="40" height="40" src="img/instagram.png">   </a>
-  
+<br><br>
+
+<p align="center" class="container">General veterinary medicine , extensive diagnostics, surgery  , laparoscopy, orthopedics and many more disciplines can be found under our roof.  There is seldom a reason to refer you to a specialist. Our team of veterinarians and assistants have the use of an extensive laboratory and excellent x-ray, ultrasound  and surgery facilities. This enables us to give your pet high quality care.</p><br>
+<h1 align="center" >Best care for your best friend</h1><br>
+
+<p align="center">If you want to contact me, please click <a href="contactme.html"> contact me</a> page.</p>
+<br><br>
+
+
+<div class="fixed-bottom  bg-success text-center">
+  <a href="index.html"><img width="40" height="40" src="img/home.png"></a>
+  <a href="https://www.facebook.com"><img width="40" height="40" src="img/facebook.png"></a>
+  <a href="https://www.twitter.com"><img width="40" height="40" src="img/twitter.png"></a>
+  <a href="https://www.instagram.com"><img width="40" height="40" src="img/instagram.png"></a>
 
 </div>
 </body>
