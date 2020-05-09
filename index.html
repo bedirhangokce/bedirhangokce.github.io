@@ -20,8 +20,12 @@
     <a href="#" class="navbar-brand">
       <img src="img/animal-icon.png" width="45" alt="" class="d-inline-block align-middle mr-2">
     </a>
-
-    <ul class="navbar-nav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMeo"
+            aria-controls="navMeo" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+ <div class="collapse navbar-collapse" id="navMeo">
+    <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="index.html">HOMEPAGE</a>
     </li>
@@ -44,7 +48,6 @@
       <a class="nav-link" href="registration.html">REGISTER</a>
     </li>
     </ul>
-
    <div class="navbar-collapse order-3 dual-collapse2">
 
     <form class="form-inline my-2 my-lg-0 navbar-nav ml-auto" action="https://google.com/search" method="get">
@@ -64,16 +67,22 @@
 <div class="row">
 <img class="col-7" src="img/index-cat.jpg">
 
-<form class="col-sm-5" action="registration.html" >
-  <label for="user">Username:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="password">Password:</label><br>
-  <input type="password" id="lname" name="lname" ><br>
-  <input type="submit" value="Login"><br> <br>
+<span class="align-text-top ">
+<form class="form-group container" action="registration.html" >
+  <div class="form-group">
+  <label for="user">Username:</label>
+  <input type="text" id="fname" name="fname">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" id="lname" name="lname" >
+</div>
+  <input class="btn btn-primary" type="submit" value="Login">
   
-  <input type="submit" value="New user" >
+  <input class="btn btn-primary" type="submit" value="New user" >
   
 </form>
+</span>
 </div>
 </div>
 </div>
@@ -83,9 +92,9 @@
 <br><br>
 
 <p align="center" class="container">General veterinary medicine , extensive diagnostics, surgery  , laparoscopy, orthopedics and many more disciplines can be found under our roof.  There is seldom a reason to refer you to a specialist. Our team of veterinarians and assistants have the use of an extensive laboratory and excellent x-ray, ultrasound  and surgery facilities. This enables us to give your pet high quality care.</p><br>
-<h1 align="center" >Best care for your best friend</h1><br>
+<h1 align="center" class="container" >Best care for your best friend</h1><br>
 
-<p align="center">If you want to contact me, please click <a href="contactme.html"> contact me</a> page.</p>
+<p align="center" class="container">If you want to contact me, please click <a href="contactme.html"> contact me</a> page.</p>
 <br><br>
 
 
@@ -96,5 +105,8 @@
   <a href="https://www.instagram.com"><img width="40" height="40" src="img/instagram.png"></a>
 
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
