@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+<script src="js/form.js"></script>
  
 <head>
 	<title></title>
@@ -17,15 +18,14 @@
 
 <nav class="navbar navbar-expand-sm bg-success navbar-dark ">
 
-
-   <a href="#" class="navbar-brand">
+    <a href="#" class="navbar-brand">
       <img src="img/animal-icon.png" width="45" alt="" class="d-inline-block align-middle mr-2">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMeo"
-            aria-controls="navMeo" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbg"
+            aria-controls="navbg" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
- <div class="collapse navbar-collapse" id="navMeo">
+ <div class="collapse navbar-collapse" id="navbg">
     <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <a class="nav-link" href="index.html">HOMEPAGE</a>
@@ -60,24 +60,34 @@
   </div>
 </nav>
 
+<br>
 
+<div align="center" class="form-group container">
+  <form name="myform" class="form-group" method="post" onsubmit="return validateform()" >  
+        <div>
+          <b>Name & Surname</b> <br>
+          <input class="form-control" type="text" id="name" > <br><br>
+        
+        </div>
 
-<div align="center" class="form-group">
-  <br>
-  <b>Name & Surname</b> <br>
-        <input type="text" id="namesurname"> <br><br>
-        
-        <b>Password</b> <br>
-        <input type="password" id="password"> <br><br>
-        
+        <div>
+          <b>Password</b> <br>
+          <input class="form-control" type="password" id="password"> <br><br>
+          <span id="confirm-message2"></span>
+
+        </div>
         <b>E-Mail Adress</b> <br>
-        <input type="text" id="emailadress" placeholder="xyz@abc.com"> <br><br>
+        <input class="form-control" type="text" id="emailadress" placeholder="xyz@abc.com"> <br><br>
+
+        <b>Telephone</b> <br>
+        <input type="text" id="telephonenumber"  class="form-control" name="" maxlength="11" placeholder="11 numbers at max"> <br><br>
         
         <b>Date of Birth</b> <br>
-        <input type="date" id="bdate"> <br><br>
+        
+        <input class="form-control" type="number" id="bdate"> <br><br>
         
         <b>Department</b> <br>
-        <select>
+        <select class="form-control">
           <option value="ceng">Computer Engineering</option>
           <option value="chem">Chemical Engineering</option>
           <option value="me">Mechanical Engineering</option>
@@ -90,7 +100,7 @@
         </select> <br><br>
         
         <b>Gender</b> <br>
-        <select>
+        <select class="form-control">
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="X">X</option>
@@ -98,41 +108,112 @@
           </select><br><br>
         
         <b>About Me</b> <br>
-        <textarea id="aboutme" rows="10" cols="40"></textarea> <br><br>
+        <textarea class="form-control" id="aboutme" rows="6" cols="40"></textarea> <br><br>
         
         <b>Upload a Photo of Yours &nbsp&nbsp </b> <input type="file" id="photo"> <br><br>
         
         <b>Mark Your Interests Below</b> <br>
-        <table> 
-          <tr>
-            <td> <input type="checkbox" name=""><i> Autos and Vehicles </i></td>
-            <td> <input type="checkbox" name=""><i> Education </i></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name=""><i> Science </i></td>
-            <td> <input type="checkbox" name=""><i> Movies </i></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name=""><i> Gaming & E-Sports </i></td>
-            <td> <input type="checkbox" name=""><i> Pets and Animals </i><td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name=""><i> Music </i></td>
-            <td> <input type="checkbox" name=""><i> Politics </i></td>
-          </tr>
-          <tr>
-            <td> <input type="checkbox" name=""><i> Economics </i></td>
-            <td> <input type="checkbox" name=""><i> Sports </i></td>
-          </tr>     
-        </table> <br> 
-        
-        <input type="submit" value="Register" onClick="alert('Thanks for registration!')" > <br><br>
-        <input type="reset" value="Reset">
-        <br><br><br><br><br><br>
+        <div class="form-check-inline">
+         <label class="form-check-label">
 
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Autos and Vehicles </i>
+
+         </label>
         </div>
 
-          </div>
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Education </i>
+
+         </label>
+        </div>
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Science </i>
+
+         </label>
+        </div>
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Movies </i>
+
+         </label>
+        </div>
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Gaming & E-Sports </i>
+
+         </label>
+        </div> <br>
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Pets and Animals </i>
+
+         </label>
+        </div>
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Music </i>
+
+         </label>
+        </div>
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Politics </i>
+        
+
+         </label>
+        </div>
+
+
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Economics </i>
+
+         </label>
+        </div>
+
+
+
+        <div class="form-check-inline">
+         <label class="form-check-label">
+
+            <input type="checkbox" class="form-check-input" name=""><i> Sports </i>
+
+         </label>
+        </div>
+        <br><br> <br>
+
+        
+        <input class="btn btn-primary" type="submit" value="register" > <br><br>
+        <input class="btn btn-primary" type="reset" value="reset">
+        
+        <br><br><br><br><br>
+      </div>
+
+    </div>
+  </form>
+
+          
 
 
 
