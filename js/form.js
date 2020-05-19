@@ -32,7 +32,7 @@ function validateform(){
 	} 
 	else if(password.search(/[A-Z]/) < 0) {
 
-  		alert("Your password needs an uppser case letter");
+  		alert("Your password needs an upper case letter");
   		return false;  
 	} 
 
@@ -49,7 +49,7 @@ function validateform(){
 	}
 
 	else if (!email.match(emailfilt)) {
-		alert("Not a valid emailadress");
+		alert("Not a valid email address");
 		return false;
 	}
 
